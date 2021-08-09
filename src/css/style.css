@@ -60,27 +60,23 @@ body {
 #wrapper {
   position: relative;
   overflow-x: hidden;
-  background-color: #f5f5fa;
   border-radius: 12px;
-  margin: 0 20px;
   min-height: 100vh;
 }
 
-@media (min-width: 1440px) {
-  #wrapper {
-    margin: 0 60px;
-  }
-}
-
 .slider {
-  margin-bottom: 20px;
+  background-color: #f5f5fa;
   min-height: calc(100vh - 378px);
+  margin: 0 20px 20px;
+  padding: 20px 0 0 21px;
 }
 
 @media (min-width: 1440px) {
   .slider {
+    border-radius: 12px 12px 12px 12px;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 60px 20px;
   }
   .slider .sliderTitle {
     position: absolute;
@@ -91,7 +87,6 @@ body {
 .slider a {
   text-decoration: none;
   color: #24A3FF;
-  padding: 20px 0 3px 21px;
   font-size: 14px;
   line-height: 1.21429;
   letter-spacing: 1px;
@@ -104,11 +99,11 @@ body {
 }
 
 .slider h3 {
-  padding: 0 0 0 21px;
+  width: calc(100% - 120px);
   min-height: 76px;
   font-size: 32px;
   line-height: 1.1875;
-  margin-bottom: 10px;
+  font-weight: bold;
   color: black;
   background-clip: text;
   background: linear-gradient(45deg, #F0145A, #EF8080);
@@ -126,13 +121,11 @@ body {
 
 .slider .sliderPicture {
   display: flex;
-  margin-left: 20px;
 }
 
 @media (min-width: 1440px) {
   .slider .sliderPicture {
     display: inline-block;
-    margin: 0;
   }
 }
 
@@ -161,11 +154,11 @@ body {
 @media (min-width: 1440px) {
   .slider .sliderPicture h4 {
     position: absolute;
-    margin: -245px 0 0 470px;
+    margin: -245px 0 0 450px;
   }
 }
 
-.slider .sliderPicture p {
+.slider p {
   position: absolute;
   margin: 30px 0 0 80px;
   font-size: 16px;
@@ -174,19 +167,21 @@ body {
 }
 
 @media (min-width: 1440px) {
-  .slider .sliderPicture p {
+  .slider p {
     position: absolute;
-    margin: -220px 0 0 470px;
+    margin: -220px 0 0 450px;
   }
 }
 
 .footerNav {
+  width: 100%;
+  background-color: #f5f5fa;
   text-align: center;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.1875;
   color: #323264;
-  margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 @media (min-width: 1440px) {
@@ -195,6 +190,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 35px 60px 40px 60px;
   }
   .footerNav .footerInformation1, .footerNav .footerInformation2 {
     display: flex;
